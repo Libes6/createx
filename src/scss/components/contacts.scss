@@ -1,0 +1,16 @@
+.form-feedback{
+
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 495px;
+  background-color: white;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .input-item{
+    display: flex;
+    justify-content: start;
+    gap: 12px;
+  }
+}

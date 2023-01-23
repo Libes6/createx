@@ -1,0 +1,88 @@
+.cart-description {
+	font-weight: 700;
+	line-height: 150%;
+}
+.card-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 285px;
+	padding: 80px 40px;
+	background: #ffffff;
+	border: 1px solid #e5e8ed;
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+		0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+		0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+		0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	border-radius: 4px;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 1000;
+		opacity: 0;
+		background-image: url('../../assets/illustrations/bg-cart.png');
+	}
+
+	> img {
+		width: 52px;
+		height: 52px;
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.card-item-view {
+	transition: all 2s ease-in-out;
+	position: relative;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	//grid-template-rows: 5fr 1fr  ;
+	flex-direction: column;
+	width: 390px;
+	height: 440px;
+
+	padding: 0px;
+	background: #ffffff;
+	border: 1px solid #e5e8ed;
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+		0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+		0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+		0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	border-radius: 4px;
+	button {
+		display: none;
+	}
+
+	> img {
+
+		height: 100%;
+		width: 100%;
+	}
+	&__bottom {
+
+		display: flex;
+		gap: 24px;
+		flex-direction: column;
+		padding: 24px 0px;
+	}
+
+	&:hover {
+		button {
+			display: block;
+		}
+		&:before {
+			opacity: 1;
+		}
+	}
+}

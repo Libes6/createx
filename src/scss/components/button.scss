@@ -1,0 +1,76 @@
+.btn-primary {
+	background: $primary;
+	transition: .4s;
+	color: white;
+	border: none;
+	&:hover{
+      background: $primaryHover;
+	}
+
+}
+.btn {
+	border-radius: 4px;
+	padding: 0px 39px;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 52px;
+
+}
+.btn-secondary {
+	background: none;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	&:focus{
+		border: 1px solid #FFFFFF;
+	}
+}
+.btn-outline-primary{
+	background: none;
+	color:$primary;
+	border: 1px solid $primary;
+	&:hover{
+		background: $primaryHover;
+		color: white;
+	}
+	&:focus{
+		border: 1px solid $primary;
+	}
+}
+.hover-outline-primary{
+	background: none;
+	color:#9A9CA5;
+
+	border: 1px solid rgba($primary,0);
+	&:hover{
+color: $primary;
+		border: 1px solid $primary;
+		background: none;
+	}
+	&:focus{
+		border: 1px solid $primary;
+	}
+}
+
+.btm-icon-arrow{
+	background: none;
+	border: none;
+	border-radius: 100%;
+	padding: 12px;
+	cursor: pointer;
+.icon-arrow{
+	background: white;
+
+}
+	svg{
+		width: 24px;
+		height: 24px;
+		fill: $gray-800;
+	}
+	&:hover{
+		background: $primary;
+		svg{
+			fill: white;
+		}
+	}
+}

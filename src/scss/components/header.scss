@@ -1,0 +1,51 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+
+	&__conrainer {
+		@include flex-v-center;
+	}
+}
+
+.header--main{
+	background:white;
+}
+.nav {
+	margin-left: -120px;
+	color: $gray-800;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 160%;
+	.nav__list {
+		@include flex-v-center;
+		gap: 10 * $step;
+	}
+	a{
+		color: $gray-800;
+		&:hover{
+			color: $primaryHover;
+		}
+	}
+}
+.header-contacts {
+	align-items: center;
+	gap: 36px;
+	@include flex-v-center;
+	a {
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+	}
+
+	.header-contacts-item {
+		@include text-gray800;
+		display: flex;
+		flex-direction: column;
+	}
+	.contact__tel {
+		@include text-gray900;
+	}
+}
