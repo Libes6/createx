@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 // import {ReactComponent as logo} from "../assets/multicolor/logo.svg";
 import logo from '../assets/multicolor/logo.svg'
 import Chat from '../assets/multicolor/Navbar/Chat.svg'
-import IPhone from '../assets/multicolor/Navbar/IPhone.svg'
+// import IPhone from '../assets/multicolor/Navbar/IPhone.svg'
 import {Link} from "react-router-dom";
 interface IheaderProps{
 	type?:'default'|"white"
@@ -36,7 +36,7 @@ const Header: FC<IheaderProps> = ({type}) => {
 				<div className='header-contacts'>
 					<a href='tel:89609498335'>
 						<div className='header-contacts-item'>
-							<img src={IPhone} alt='' />
+{/* 							<img src={IPhone} alt='' /> */}
 						</div>
 						<div className='header-contacts-item'>
 							<span className='contact__caption '>Call us</span>
